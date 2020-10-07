@@ -21,8 +21,8 @@ const  Payment = ({products, setReload = f => f, reload =  undefined}) =>  {
     const getToken = (userId, token) => {
         getMeToken(userId, token).then(info => {
             //console.log("INFORMATION" , info)
-            if(info.error) {
-                setInfo({...info, error: info.error});
+            if(info?.error) {
+                setInfo({...info, error: info?.error});
             } else {
                 const clientToken = info.clientToken;
                 setInfo({clientToken})
