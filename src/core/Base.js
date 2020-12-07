@@ -19,12 +19,7 @@ const Base = ({
                </div>
               <div className = {className}>{children}</div>
             </div>  
-            <div className=" bg-dark mt-auto py-3 ">
-                <div className= "container-fluid bg-success text-white text-center">
-                    <h4 className = "font-weight-bold">If you got any questions, feel free to reach out!</h4>
-                    <Link to = "/contact" className= "btn btn-warning">Contact us</Link>
-                </div>
-            </div> 
+            
         </div>
         
     )
